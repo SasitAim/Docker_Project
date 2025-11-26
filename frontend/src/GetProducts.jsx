@@ -5,7 +5,9 @@ function GetProducts() {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/getProducts')
+        // fetch('http://localhost:3000/getProducts')
+        fetch(import.meta.env.VITE_BACKEND_URL + "/getProducts")
+
             .then(response => response.json())
             .then(data => setProducts(data))
             .catch(error => console.log(error));
