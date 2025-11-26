@@ -5,9 +5,9 @@ const cors = require('cors');
 const connection = new Client({
   user: 'postgres',
   host: 'postgres_db',  // host: 'db'
-  database: 'EcommerceDB',
-  password: 'password1234',
-  port: 5432,
+  database: 'xxxxxxxxxx', // Database Name
+  password: 'xxxxxxxxxx', // Your password
+  port: xxxx,
 });
 connection.connect();
 const app = express();
